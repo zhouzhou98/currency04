@@ -1,6 +1,4 @@
 package com.high.currency04.master;
-
-import java.util.Locale;
 import java.util.Map;
 import java.util.Queue;
 
@@ -29,13 +27,5 @@ public class Worker implements Runnable{
             Object result = handle(input);
             resultMap.put(Integer.toString(input.hashCode()), result);
         }
-    }
-
-    public static void main(String[] args) {
-
-        String s = "皱皱ISIS";
-        String s1 = s.toLowerCase(Locale.ROOT);
-        System.out.println(s1);
-
     }
 }

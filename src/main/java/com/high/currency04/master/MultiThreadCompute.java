@@ -6,7 +6,7 @@ import java.util.Set;
 public class MultiThreadCompute {
     public static void main(String[] args) {
         Long start = System.currentTimeMillis();
-        Integer nThreads = Runtime.getRuntime().availableProcessors();
+//        Integer nThreads = Runtime.getRuntime().availableProcessors();
         Master master = new Master(new ComputeWorker(), 100);
         for (long i = 1; i < 1000001; i++) {
             master.submit(i);
